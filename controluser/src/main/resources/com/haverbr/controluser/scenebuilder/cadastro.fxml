@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vboxCadastro" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haverbr.controluser.MenuController">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="Telas">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToCadastro" text="Cadastro dados Pessoais" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToInformarpais" text="Informar o nome dos pais" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToVisualizar" text="Visualizar cadastro" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToTerminar" text="Terminar" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ajuda">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About Developer" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Button layoutX="130.0" layoutY="316.0" mnemonicParsing="false" onAction="#limpar" text="Limpar" />
+                <Label alignment="CENTER" layoutX="163.0" layoutY="8.0" style="&#10;" text="Cadastro dados Pessoais e Localização" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button layoutX="290.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchToMenu" text="Cancelar" />
+                <Button layoutX="451.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchToInformarpais" text="Continuar" />
+            <ComboBox id="comboBox1" fx:id="cmbSigla" layoutX="130.0" layoutY="239.0" prefWidth="150.0" promptText="Senecionar UF" />
+            <Label layoutX="33.0" layoutY="52.0" text="Nome" />
+            <Label layoutX="33.0" layoutY="91.0" text="Endereço" />
+            <Label layoutX="33.0" layoutY="116.0" text="Número" />
+            <Label layoutX="363.0" layoutY="52.0" text="CPF" />
+            <Label layoutX="363.0" layoutY="136.0" text="Complemento" />
+            <Label layoutX="33.0" layoutY="191.0" text="Cidade" />
+            <Label layoutX="33.0" layoutY="160.0" text="Bairro" />
+            <Label layoutX="362.0" layoutY="191.0" text="Data de nascimento" />
+            <Label layoutX="362.0" layoutY="82.0" text="CEP" />
+            <Label layoutX="33.0" layoutY="244.0" text="Sigla do estado" />
+            <TextField fx:id="nome" layoutX="120.0" layoutY="47.0" />
+            <TextField fx:id="cpf" layoutX="399.0" layoutY="47.0" />
+            <TextField fx:id="endereco" layoutX="120.0" layoutY="86.0" />
+            <TextField fx:id="cep" layoutX="399.0" layoutY="87.0" />
+            <TextField fx:id="numero" layoutX="120.0" layoutY="121.0" />
+            <TextField fx:id="complemento" layoutX="399.0" layoutY="155.0" />
+            <TextField fx:id="barrio" layoutX="120.0" layoutY="162.0" />
+            <TextField fx:id="cidade" layoutX="120.0" layoutY="196.0" />
+            <DatePicker fx:id="dtpkDadaNascimento" layoutX="399.0" layoutY="225.0" />
+            </children>
+        </AnchorPane>
+      <Label text="Label" />
+    </children>
+</VBox>
