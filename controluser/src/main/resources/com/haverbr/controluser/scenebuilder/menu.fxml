@@ -8,14 +8,13 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haverbr.controluser.MenuController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="185.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haverbr.controluser.MenuController">
     <children>
         <MenuBar VBox.vgrow="NEVER">
             <menus>
                 <Menu mnemonicParsing="false" text="Telas">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#switchToCadastro" text="Cadastro dados Pessoais" />
-                        <MenuItem mnemonicParsing="false" onAction="#switchToInformarpais" text="Informar o nome dos pais" />
                         <MenuItem mnemonicParsing="false" onAction="#switchToVisualizar" text="Visualizar cadastro" />
                         <MenuItem mnemonicParsing="false" onAction="#switchToTerminar" text="Terminar" />
                     </items>
@@ -27,11 +26,11 @@
                 </Menu>
             </menus>
         </MenuBar>
-        <SplitPane dividerPositions="0.4811320754716981, 0.7610062893081762" focusTraversable="true" prefHeight="189.0" prefWidth="340.0" VBox.vgrow="ALWAYS">
+        <SplitPane focusTraversable="true" prefHeight="189.0" prefWidth="340.0" VBox.vgrow="ALWAYS">
             <items>
-                <AnchorPane prefHeight="435.0" prefWidth="342.0">
+                <AnchorPane prefHeight="187.0" prefWidth="185.0">
                     <children>
-                        <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" style="&#10;" text="Menu" textAlignment="CENTER" wrapText="false">
+                        <Label alignment="CENTER" layoutX="67.0" layoutY="14.0" style="&#10;" text="Menu" textAlignment="CENTER" wrapText="false">
                             <font>
                                 <Font size="18.0" fx:id="x1" />
                             </font>
@@ -39,25 +38,10 @@
                                 <Color blue="0.624" green="0.624" red="0.624" fx:id="x2" />
                             </textFill>
                         </Label>
-                        <Button layoutX="14.0" layoutY="39.0" mnemonicParsing="false" onAction="#switchToCadastro" text="Cadastro" />
-                        <Button layoutX="14.0" layoutY="77.0" mnemonicParsing="false" onAction="#switchToInformarpais" text="Informar País" />
-                        <Button layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#switchToVisualizar" text="Visualizar" />
-                        <Button layoutX="14.0" layoutY="150.0" mnemonicParsing="false" onAction="#switchToTerminar" text="Terminar" />
-                    </children>
-                </AnchorPane>
-                <ScrollPane prefHeight="-1.0" prefWidth="-1.0">
-                    <content>
-                        <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="430.0">
-                            <children>
-                                <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="View" textAlignment="CENTER" textFill="$x2" wrapText="false" />
-                                <Pane layoutX="-189.0" layoutY="512.0" prefHeight="-1.0" prefWidth="-1.0" />
-                            </children>
-                        </AnchorPane>
-                    </content>
-                </ScrollPane>
-                <AnchorPane>
-                    <children>
-                        <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Details" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                        <Button layoutX="55.0" layoutY="49.0" mnemonicParsing="false" onAction="#switchToCadastro" text="Cadastro" />
+                        <Button layoutX="52.0" layoutY="131.0" mnemonicParsing="false" onAction="#switchToVisualizarBtnMenu" text="Visualizar" />
+                        <Button layoutX="53.0" layoutY="181.0" mnemonicParsing="false" onAction="#switchToTerminar" text="Terminar" />
+                  <Button layoutX="40.0" layoutY="89.0" mnemonicParsing="false" onAction="#switchToInformarpaisBtnMenu" text="Informar País" />
                     </children>
                 </AnchorPane>
             </items>

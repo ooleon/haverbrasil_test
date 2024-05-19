@@ -7,7 +7,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haverbr.controluser.MenuController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haverbr.controluser.VisualizarController">
     <children>
         <MenuBar>
             <menus>
@@ -28,32 +28,32 @@
         </MenuBar>
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" pickOnBounds="false" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
             <children>
-                <Button fx:id="btnOk" layoutX="451.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchToMenu" text="OK" />
-                <Label alignment="CENTER" layoutX="187.0" layoutY="14.0" style="&#10;" text="“Visualização do Cadastro”" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Label>
+                <Button fx:id="btnOk" layoutX="451.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchToMenu" styleClass="font-continuar" stylesheets="@app.css" text="OK" />
+                <Label id="lbltitulo" alignment="CENTER" layoutX="187.0" layoutY="14.0" stylesheets="@app.css" text="“Visualização do Cadastro”" textAlignment="CENTER" wrapText="false" />
             <Label layoutX="38.0" layoutY="54.0" text="Nome" />
-            <Label fx:id="nome" layoutX="185.0" layoutY="54.0" prefHeight="19.0" prefWidth="166.0" />
+            <Label id="lblnome" fx:id="nome" layoutX="150.0" layoutY="54.0" prefHeight="19.0" prefWidth="142.0" />
             <Label layoutX="38.0" layoutY="126.0" text="Sigla do estado" />
-            <Label fx:id="sigla" layoutX="185.0" layoutY="126.0" />
+            <Label fx:id="sigla" layoutX="150.0" layoutY="126.0" prefHeight="19.0" prefWidth="87.0" />
             <Label layoutX="38.0" layoutY="92.0" text="CEP" />
-            <Label fx:id="cep" layoutX="185.0" layoutY="92.0" />
+            <Label fx:id="cep" layoutX="150.0" layoutY="92.0" prefHeight="19.0" prefWidth="142.0" styleClass="nome" />
             <Label layoutX="363.0" layoutY="54.0" text="Data de nascimento" />
-            <Label fx:id="datanacimento" layoutX="510.0" layoutY="54.0" />
+            <Label fx:id="datanacimento" layoutX="510.0" layoutY="54.0" prefHeight="19.0" prefWidth="94.0" />
             <Label layoutX="38.0" layoutY="183.0" text="Bairro" />
-            <Label fx:id="barrio" layoutX="187.0" layoutY="183.0" prefHeight="19.0" prefWidth="70.0" />
+            <Label fx:id="bairro" layoutX="150.0" layoutY="183.0" prefHeight="19.0" prefWidth="142.0" />
             <Label layoutX="38.0" layoutY="202.0" text="Cidade" />
-            <Label fx:id="cidade" layoutX="185.0" layoutY="202.0" />
+            <Label fx:id="cidade" layoutX="150.0" layoutY="202.0" prefHeight="19.0" prefWidth="142.0" />
             <Label layoutX="38.0" layoutY="221.0" text="Complemento" />
-            <Label fx:id="complemento" layoutX="185.0" layoutY="221.0" />
+            <Label fx:id="complemento" layoutX="150.0" layoutY="221.0" prefHeight="19.0" prefWidth="142.0" />
             <Label layoutX="38.0" layoutY="73.0" text="CPF" />
-            <Label fx:id="cpf" layoutX="185.0" layoutY="73.0" />
+            <Label fx:id="cpf" layoutX="150.0" layoutY="73.0" prefHeight="19.0" prefWidth="142.0" />
             <Label layoutX="38.0" layoutY="259.0" text="Número" />
-            <Label fx:id="numero" layoutX="185.0" layoutY="259.0" />
+            <Label fx:id="numero" layoutX="150.0" layoutY="259.0" prefHeight="19.0" prefWidth="142.0" />
             <Label layoutX="38.0" layoutY="278.0" text="Endereço" />
-            <Label fx:id="endereco" layoutX="185.0" layoutY="278.0" />
+            <Label fx:id="endereco" layoutX="150.0" layoutY="278.0" prefHeight="19.0" prefWidth="142.0" />
+            <Label fx:id="nomemae" layoutX="451.0" layoutY="183.0" prefHeight="19.0" prefWidth="142.0" />
+            <Label layoutX="363.0" layoutY="183.0" text="Nome mae" />
+            <Label fx:id="nomepai" layoutX="451.0" layoutY="164.0" prefHeight="19.0" prefWidth="142.0" />
+            <Label layoutX="363.0" layoutY="164.0" text="Nome Pai" />
             </children>
         </AnchorPane>
     </children>

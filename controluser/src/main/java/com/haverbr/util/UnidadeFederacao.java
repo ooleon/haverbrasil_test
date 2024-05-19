@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.haverbr.Entity;
+package com.haverbr.util;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,7 +19,7 @@ import java.util.Map;
  * @since 1.0.0
  */
 public enum UnidadeFederacao {
-
+    DISTRITO_FEDERAL("Distrito Federal", "DF", "Brasília"),
     AMAZONAS("Amazonas", "AM", "Manaus"),
     ALAGOAS("Alagoas", "AL", "Maceió"),
     ACRE("Acre", "AC", "Rio Branco"),
@@ -45,8 +45,7 @@ public enum UnidadeFederacao {
     RIO_GRANDE_DO_NORTE("Rio Grande do Norte", "RN", "Natal"),
     ESPIRITO_SANTO("Espírito Santo", "ES", "Vitória"),
     RIO_DE_JANEIRO("Rio de Janeiro", "RJ", "Rio de Janeiro"),
-    SERGIPE("Sergipe", "SE", "Aracaju"),
-    DISTRITO_FEDERAL("Distrito Federal", "DF", "Brasília");
+    SERGIPE("Sergipe", "SE", "Aracaju");
 
     private final String nome;
     private final String sigla;
@@ -145,7 +144,7 @@ public enum UnidadeFederacao {
         return this.capital;
     }
 
-    public static List<UnidadeFederacao> getListSigla() {
+    public static List<String> getListSigla() {
         List l = new ArrayList<UnidadeFederacao>();
         for (final UnidadeFederacao uf : UnidadeFederacao.values()) {
             l.add(uf.sigla);

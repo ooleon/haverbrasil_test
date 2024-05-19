@@ -7,14 +7,14 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haverbr.controluser.MenuController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haverbr.controluser.InformarPaisController">
     <children>
         <MenuBar>
             <menus>
                 <Menu mnemonicParsing="false" text="Telas">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#switchToCadastro" text="Cadastro dados Pessoais" />
-                        <MenuItem mnemonicParsing="false" onAction="#switchToInformarpais" text="Informar o nome dos pais" />
+                        <MenuItem mnemonicParsing="false" text="Informar o nome dos pais" />
                         <MenuItem mnemonicParsing="false" onAction="#switchToVisualizar" text="Visualizar cadastro" />
                         <MenuItem mnemonicParsing="false" onAction="#switchToTerminar" text="Terminar" />
                     </items>
@@ -28,16 +28,13 @@
         </MenuBar>
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
             <children>
-                <Button layoutX="130.0" layoutY="316.0" mnemonicParsing="false" text="Limpar" />
-                <Label alignment="CENTER" layoutX="160.0" layoutY="25.0" style="&#10;" text="Informar o nome dos pais" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Label>
-                <Button layoutX="290.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchToMenu" text="Cancelar" />
-                <Button layoutX="451.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchToVisualizar" text="Salvar" />
-            <TextField fx:id="mae" layoutX="269.0" layoutY="115.0" />
+                <Label id="lbltitulo" alignment="CENTER" layoutX="160.0" layoutY="25.0" stylesheets="@app.css" text="Informar o nome dos pais" textAlignment="CENTER" wrapText="false" />
+                
             <TextField fx:id="pai" layoutX="270.0" layoutY="75.0" />
+            <TextField fx:id="mae" layoutX="269.0" layoutY="115.0" />
+                <Button layoutX="451.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchToVisualizar" styleClass="font-continuar" stylesheets="@app.css" text="Salvar" />
+                <Button layoutX="130.0" layoutY="316.0" mnemonicParsing="false" onAction="#limpar" styleClass="font-limpar" stylesheets="@app.css" text="Limpar" />
+                <Button layoutX="290.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchToCadastro" styleClass="font-cancelar" stylesheets="@app.css" text="Cancelar" />
             <Label layoutX="149.0" layoutY="125.0" text="Nome Mãe" />
             <Label layoutX="150.0" layoutY="75.0" text="Nome Pai" />
             </children>

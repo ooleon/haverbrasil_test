@@ -1,0 +1,36 @@
+.root{
+/*    -fx-background-color: lightskyblue;
+    -fx-font-size: 14;*/
+}
+
+.font-continuar {
+    -fx-background-color: lawngreen;
+    -fx-font: bold italic 12pt "Arial";
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+.font-cancelar {
+    -fx-background-color: darkorange;
+    -fx-font: bold italic 12pt "Arial";
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+.font-limpar {
+    -fx-background-color: cornflowerblue;
+    -fx-font: bold italic 12pt "Arial";
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+.label{
+/*    -fx-background-color: silver;*/
+    /*-fx-font-size: 12;*/
+}
+
+#lbltitulo{
+    -fx-text-fill: black;
+    /*    style="&#10;" */
+    /*    -fx-background-color: silver;*/
+    -fx-background-color: lightgrey;
+    -fx-font-size: 14;
+
+}
